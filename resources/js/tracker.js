@@ -11,7 +11,6 @@
     function trackVisit() {
         const data = {
             page_url: window.location.href,
-            ip_address: "",
             user_agent: navigator.userAgent,
             session_id: getSessionId(),
         };

@@ -4,12 +4,11 @@
 
 ## Setup:
 
-docker run --rm
+<code>docker run --rm
 -u "$(id -u):$(id -g)"
 -v $(pwd):/var/www/html
 -w /var/www/html laravelsail/php82-composer:latest
-composer install --ignore-platform-reqs
-
+composer install --ignore-platform-reqs <code/>
 cp .env .env.example
 
 ./vendor/bin/sail up
@@ -33,3 +32,9 @@ The project will run on localhost:8080
   - only whitelisted origins will be shown here
   - accessible on http://localhost:8080/admin/report
   - contains date filters for ease of use 
+
+## Database Schema:
+ ![img_2.png](img_2.png)
+ ![img_3.png](img_3.png)
+  
+ Each table has its own migration found in /database/migrations
