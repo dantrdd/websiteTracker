@@ -8,11 +8,13 @@
 -u "$(id -u):$(id -g)"
 -v $(pwd):/var/www/html
 -w /var/www/html laravelsail/php82-composer:latest
-composer install --ignore-platform-reqs <code/>
-cp .env .env.example
-
-./vendor/bin/sail up
-./vendor/bin/sail artisan migrate
+composer install --ignore-platform-reqs </code>
+<br>
+<code> cp .env .env.example </code>
+<br>
+<code>./vendor/bin/sail up </code>
+<br>
+<code>./vendor/bin/sail artisan migrate </code>
 
 The project will run on localhost:8080
 
